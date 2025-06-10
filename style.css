@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat.ttf)
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(Roboto-Light.ttf);
+}
+
+
+:root {
+    --buff: #cb997eff;
+    --desert-sand: #ddbea9ff;
+    --champagne-pink: #ffe8d6ff;
+    --ash-gray: #b7b7a4ff;
+    --sage: #a5a58dff;
+    --reseda-green: #6b705cff;
+    --licorice: #14080eff;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat";
+    color: var(--buff);
+}
+h3 {
+    color: var(--ash-gray);
+    font-family: "Montserrat";
+}
+
+p,
+div {
+    font-family: "Roboto";
+}
+
+header a {
+    color: var(--champagne-pink);
+    text-decoration: none;
+    padding: 10px 15px;
+    line-height: 50px;
+    text-align: center;
+}
+
+header p {
+    float: right;
+    padding-right: 10px;
+    color: var(--champagne-pink);
+}
+
+header {
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 10px;
+
+    background-color: var(--reseda-green);
+
+}
+
+main {
+    padding: 10px;
+}
+
+
+body {
+    background-color: var(--champagne-pink);
+}
+
+.imagewrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagewrapper img, video{
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+.entrytext {
+    max-width: 800px;
+    text-align: justify;
+}
+
+.entrywrapper {
+    border-bottom: 2px solid var(--reseda-green);
+}
