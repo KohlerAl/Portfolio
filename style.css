@@ -24,6 +24,7 @@ h2 {
     font-family: "Montserrat";
     color: var(--buff);
 }
+
 h3 {
     color: var(--ash-gray);
     font-family: "Montserrat";
@@ -71,7 +72,8 @@ body {
     flex-direction: row;
 }
 
-.imagewrapper img, video{
+.imagewrapper img,
+video {
     max-width: 400px;
     max-height: 400px;
     width: auto;
@@ -85,4 +87,18 @@ body {
 
 .entrywrapper {
     border-bottom: 2px solid var(--reseda-green);
+}
+
+
+@media (max-width: 800px) {
+    .imagewrapper {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .imagewrapper img {
+        max-height: 100%;
+        width: auto;
+        max-width: 300px;
+    }
 }
